@@ -1,4 +1,4 @@
-header {
+/* header {
     
     background-color: lightblue;
     background-repeat: no-repeat;
@@ -146,4 +146,141 @@ header {
 
 .table-stripped tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+header nav ul li {
+  margin-top: 3vh;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.expandMenu {
+  display: none;
+}
+
+@media (min-width: 641px) {
+  span.icon { display: none; }
+  span.text { display: inline-block; }
+}
+
+@media (max-width: 640px) {
+  span.icon { display: inline-block; }
+  span.text { display: none; }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formAutos {
+  border: 1px solid black;
+  width: 70%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.datosPrincipales {
+  display: block;
+}
+
+.datosPrincipales .dato {
+  width: 100%;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.datosPrincipales label {
+  margin: 10px;
+}
+
+.form-group {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.detalle {
+  margin: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  background: rgb(40, 111, 168);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.enviar {
+  width: 10%;
+}
+
+.flex {
+  display: flex;
+}
+
+.container-table {
+  width: 100%;
+  justify-content: center;
+}
+
+.container-table table {
+  width: 75%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.container-table table th,
+.container-table table td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-stripped thead tr {
+  background-color: #f2f2f2;
+}
+
+.table-stripped tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
