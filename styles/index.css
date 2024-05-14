@@ -1,0 +1,149 @@
+header {
+    
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  header nav ul li {
+    margin-top: 3vh;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+    font-size: 20px;
+  }
+
+  .expandMenu {
+    display: none;
+  }
+
+  @media (min-width: 641px) {
+    span.icon {display:none}
+    span.text {display:inline-block}
+}
+
+@media (max-width: 640px) {
+    span.icon {display:inline-block}
+    span.text {display:none}
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formAutos {
+  border: 1px solid black;
+  width: 70%;
+  padding: 2rem;
+  box-sizing: border-box;
+
+}
+
+.datosPrincipales {
+  display: block;
+}
+.datosPrincipales .dato {
+  width: 100%;
+  margin: 10px;
+  margin-top: 0px;
+}
+.datosPrincipales label {
+  margin: 10px;
+}
+
+.form-group {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.detalle {
+  margin: 10px;
+}
+
+.btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+
+  color: white;
+  background: rgb(40, 111, 168);
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.enviar {
+  width: 10%;
+}
+
+.flex {
+  display: flex;
+}
+
+.container-table {
+  width: 100%;
+  justify-content: center;
+}
+
+.container-table table {
+  width: 75%;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.container-table table thead {
+  width: 100%;
+}
+
+.container-table tbody tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-table table tr {
+  justify-content: space-between;
+
+  padding: 0.5rem;
+}
+
+.table-stripped thead tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-stripped tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

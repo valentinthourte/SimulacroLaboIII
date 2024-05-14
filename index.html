@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="./index.js" type="module" defer></script>
+    <title>Automotores</title>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <img src="./assets/images/spinner.gif" alt="Logo Principal" class="logoPrincipal">
+            <span class="text">
+                <nav>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Anuncios</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contrato</a></li>
+                    </ul>
+                </nav>
+            </span>
+            <span class="icon">
+                <img src="./assets/images/menu.svg" alt="menuIconBurger">
+            </span>
+        </div>
+        <h1 class="titulo">Automoviles</h1>
+    </header>
+    
+    <h1 class="center">Administracion</h1>
+    <div class="form center">
+        <form action="" method="post" id="formAutos">
+            <div class="datosPrincipales">
+                <div class="dato">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="Titulo"/>
+                </div>
+
+                <h2 class="center">Transaccion:</h2>
+                <div class="radio center">
+                    <div class="form-group">
+                        <div class="form-group">
+                          <label for="rVenta">Venta</label>
+              
+                          <input type="radio" name="transaccion" id="rVenta" checked />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="rAlquiler">Alquiler</label>
+              
+                          <input type="radio" name="transaccion" id="rVenta" />
+                        </div>
+                      </div>
+                </div>
+
+                <div class="dato">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="descripcion" name="descripcion" id="descripcion" placeholder="Descripcion"/>
+                </div>
+
+                <div class="dato">
+
+                    <label for="precio">Precio</label>
+                    <input type="text" name="precio" id="precio" placeholder="Precio"/>
+                </div>
+            </div>
+            <div class="detalles center">
+                <div class="detalle">
+                    <label for="puertas">Puertas</label>
+                    <input type="text" name="puertas" id="puertas" placeholder="Puertas"/>
+                </div>
+
+                <div class="detalle">
+                    <label for="kms">KMs</label>
+                    <input type="text" name="kms" id="kms" placeholder="KMs"/>
+                </div>
+                
+                <div class="detalle">
+                    <label for="potencia">Potencia</label>
+                    <input type="text" name="potencia" id="potencia" placeholder="Potencia"/>
+                </div>
+                
+            </div>
+            <div class="enviar">
+                <input class="btn" type="submit" name="guardar" id="btnGuardar">
+            </div>
+        </form>
+    </div>
+
+    <div class="container-table flex">
+        <table id="table-items" class="table-items table-stripped flex">
+          <thead>
+            <tr class="flex">
+              <th>ID</th>
+              <th>Titulo</th>
+              <th>Transaccion</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+              <th>Puertas</th>
+              <th>KMs</th>
+              <th>Potencia</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbodyx"></tbody>
+        </table>
+      </div>
+
+</body>
+</html>
